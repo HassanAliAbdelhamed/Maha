@@ -6,7 +6,7 @@ let resTime = document.getElementById("resTime");
 
 function Submit(event){
     event.preventDefault()
-    const message = `بعد إذن حضراتكم، عايز أعمل حجز باسم: ${resName}، بباقه: ${resBaka}، في يوم: ${resDate}، الساعة: ${resTime}، ورقم التواصل: ${resTel}`;
+    const message = `بعد إذن حضراتكم، عايز أعمل حجز باسم: ${resName.value}، بباقه: ${resBaka.value}، في يوم: ${resDate.value}، الساعة: ${resTime.value}، ورقم التواصل: ${resTel.value}`;
     const phoneNumber = "966 55 078 1986"; // ← حط رقم الواتساب هنا بدون + ومفتاح الدولة في الأول
     const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
 
