@@ -7,7 +7,13 @@ let resTime = document.getElementById("resTime");
 function Submit(event) {
     event.preventDefault();
 
-    const message = `بعد إذن حضراتكم، عايز أعمل حجز باسم: ${resName.value}، بباقه: ${resBaka.value}، في يوم: ${resDate.value}، الساعة: ${resTime.value}، ورقم التواصل: ${resTel.value}`;
+    const message = `السلام عليكم، حابين نحجز بالأوقات الموضحة إذا كانت متاحة:
+    
+    الاسم / ${resName.value}
+    رقم الجوال / ${resTel.value}
+    الباقة / ${resBaka.value}
+    اليوم / ${resDate.value}
+    الساعة / ${resTime.value}`;
     const phoneNumber = "966550781986"; // رقم واتساب بدون + وبدون مسافات
     const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
 
